@@ -11,7 +11,7 @@ cachetools==5.3.1
 tqdm==4.66.1  # Required by yfinance
 pytz==2023.3
 pandas_datareader==0.10.0
-
+yahooquery==2.3.1
 yfinance==0.2.36
 requests==2.31.0
 urllib3==2.0.4
