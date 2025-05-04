@@ -11,3 +11,4 @@ python-dotenv==1.0.0
 cachetools==5.3.1
 tqdm==4.66.1  # Required by yfinance
 pytz==2023.3
+pandas_datareader==0.10.0
