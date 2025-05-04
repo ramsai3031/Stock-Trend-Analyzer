@@ -1,6 +1,5 @@
 streamlit==1.32.0
- # Slightly older but more stable version
-pandas==2.1.3  # One minor version back for stability
+pandas==2.1.3
 numpy==1.26.0
 plotly==5.18.0
 ta==0.11.0
@@ -8,10 +7,12 @@ beautifulsoup4==4.12.2
 nltk==3.8.1
 python-dotenv==1.0.0
 cachetools==5.3.1
-tqdm==4.66.1  # Required by yfinance
+tqdm==4.66.1
 pytz==2023.3
 pandas_datareader==0.10.0
 yahooquery==2.3.1
 yfinance==0.2.36
 requests==2.31.0
 urllib3==2.0.4
+matplotlib==3.8.0
+scikit-learn==1.3.0
