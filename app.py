@@ -265,6 +265,7 @@ def make_prediction(data):
 
 # Main app
 def main():
+    start_time = time.time()
     st.title("📈 Stock Trend Analyzer")
     
     # Sidebar
@@ -752,14 +753,16 @@ def main():
             fig_vol.update_layout(height=300, showlegend=True)
             st.plotly_chart(fig_vol, use_container_width=True)
             
-            analysis_time = time.time() - start_time
         
+            if 'stock_data' in st.session_state and st.session_state.stock_data is not None:
+                analysis_time = time.time() - start_time
+  
         # Display success message (above the else clause)
             # Replace st.balloons() with this combo:
            
-            st.balloons()
+                
 
-            st.success(f"""✔ {st.session_state.ticker} Stock analysis completed in {analysis_time:.2f}s
+                st.success(f"""✔ {st.session_state.ticker} Stock analysis completed in {analysis_time:.2f}s
                    • {len(st.session_state.stock_data)} data points
                    • Last updated {datetime.now().strftime('%Y-%m-%d %H:%M')}""")
     
